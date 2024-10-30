@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background: linear-gradient(rgb(220, 223, 226), rgb(82, 151, 215)), url(solarpan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #000000;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+header h1 {
+    margin: 6px;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.nav-links a:hover {
+    background-color: #4591ff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4591ff;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #073D94;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-right: auto;
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: auto;
+        background-color: #1c66df;
+        text-align: left;
+        padding-left: 0px;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .dropdown-content {
+        left: 100%;
+        top: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+.image-slider {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #1c66df;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.slider-img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* Consultation Button */
+.consultation-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1c66df;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+}
+/* Additional styling for sections and containers */
+#grid-box {
+    background-color: white;
+    margin: 70px 180px 50px 180px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(128, 128, 128);
+    padding: 30px;
+    text-align: justify;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 120px;
+    width: auto;
+}
+
+p {
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    color: #5297d7;
+}
+
+.search-container {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+
+.search-input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.search-button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #5297d7;
+    color: azure;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    flex: 1 1 400px;
+    max-width: 400px;
+    text-align: center;
+}
+section {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #1c66df;
+}
+
+p {
+    color: black;
+}
+
+ul {
+    list-style: none;
+    background: rgb(82, 151, 215);
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 14px 25px;
+    color: azure;
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li ul.drop li {
+    display: block;
+}
+
+ul li ul.drop {
+    width: 100%;
+    background: black;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background: cyan;
+}
+
+ul li:hover ul.drop {
+    display: block;
+}
