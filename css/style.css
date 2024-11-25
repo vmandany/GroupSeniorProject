@@ -1,0 +1,343 @@
+
+*{
+    margin: 0;
+    padding: 0; 
+    align-items: center;
+}
+body{
+    background-image: url('/Users/kevinsimac/Desktop/TesoroImage (1).jpg');
+    background-size: cover; /* Change to cover to maintain aspect ratio */
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white; 
+    background-attachment: fixed; /* Keep this if you want a fixed background */
+    
+}
+
+nav{
+    position:fixed;
+    width: 100%; 
+    background-color: rgb(21,44,58); 
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1); 
+
+}
+nav ul{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0;
+    padding-top: 15px;
+    list-style-type: none;
+    
+    position: fixed;
+    width: 100%;
+    height: 9%; 
+    background-color: rgb(21, 44, 58); 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    color: white; 
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    color: white; 
+}
+nav a:hover{
+    height: 90%;
+    background-color: #0c4a6f; 
+}
+/*
+<style="height: 100%; width: 100%; object-fit: contain">
+
+nav li:first-child{
+    margin-right: 900px;
+}
+*/
+
+.sidebar{
+    position: fixed; 
+    top: 0;
+    right: 0;
+    height: 100vh; 
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.345);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%; 
+}
+.sidebar a{
+     width: 100%; 
+}
+.menu-button{
+    display: none;
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%; 
+    }
+}
+.dropdown {
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.345);
+    backdrop-filter: blur(10px);
+    background: rgba(0,119,181,0.75);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown-login {
+    display: none;
+    position: absolute;
+    background-color: slategray;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-login {
+    display: block;
+}
+
+.container {
+    width: 25vw; /* Width of the boxes */
+    height: 40vh; /* Height of the boxes */
+    justify-content: center;
+    display: flex;
+    gap: 20px; /* Space between the boxes */
+
+}
+
+.container2 {
+    width: 600px;
+    background: transparent;
+    border:  2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.box {
+    background-color: #152C3A;
+    width: 150vh; /* Width of the boxes */
+    height: 50vh; /* Height of the boxes */
+    color: white; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  
+}
+.rectangle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    padding-top: 3%;
+    background-color: #ffffff;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.videoBox {
+    background-color: #ffffff;
+    color: black; /* Change to black for visibility */
+    width: 100%; /* Full width */
+    height: auto; /* Adjust as necessary */
+    display: flex;
+    justify-content: center; /* Aligns content to the left */
+    align-items: center;
+    padding: 20px; /* Add padding if needed */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.videoCenter {
+    width: 85%; 
+    border-radius: 3% / 7%;
+    color: black; 
+    /* Removed padding-top and padding-bottom for more flexible positioning */
+}
+
+
+.videoHeader{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color:black; 
+    text-align: center;
+}
+
+.imageSection{
+    -webkit-text-fill-color: #ffff; 
+    padding-top: 3.5%; 
+    padding-bottom: 23%; /* Percentage maintians image ratio */ 
+    text-align: center;
+}
+
+.montserrat-font {
+
+ /* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 100 to 900 */
+  
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.open-sans-font {
+
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 300 to 800 */
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.search-container {
+    display: flex-end;
+    justify-content: flex-end; /* Aligns to the right */
+   
+}
+
+.search-bar {
+    display: flex;
+    width: 150%;
+}
+
+.btn {
+    margin-left: 0px; /* Adjust the value as needed for spacing */
+    
+}
+
+.login-background{
+    background-color: rgba(255, 255, 255, 0.345);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    color: black;
+    padding: 40%;
+    width: 425px;
+
+}
+
+.center-body{
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.cust_logos{
+    padding: 2% 5% 0% 5%; 
+    background-color: #ffffff;
+    text-align: center;
+    filter: grayscale(100%);
+    filter: brightness(100%);
+}
+
+footer{
+    background-color: #ffffff;
+    
+}
+
+.contact-rectangle{
+    text-align: center;
+    background-color: #ffffff;
+   
+}
+
+.form{
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.form-group{
+    margin-bottom:30px;
+}
+
+.regbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container-footer{
+    background-color: #ffffff;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+.api-rectangle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    gap: 2%;
+
+}
+
+.solar-description-left{
+    background-color: #ffffff;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+
+}
+
+.solar-description-right{
+    background-color: #ffffff;
+    padding-left: 10%;
+    padding-right: 10%;
+    display:flex; 
+    
+   
+}
+
