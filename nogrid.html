@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>SolarShine Dynamics</title>
+   <link rel="icon" href="Sunshine_Dynamics_Favicon_3D.png">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+   <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="left-nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+        </div>
+
+        <div class="logo">
+            <div class="logo">
+                <a href="index.html"><img src="Sunshine_Dynamics_Favicon_3D.png"></a>
+            </div>
+        </div>
+
+        <div class="right-nav">
+            <a href="contact.html">Contact</a>
+            <a href="nogrid.html">About</a>
+        </div>
+    </nav>
+
+    <div class="search-box">
+        <button id="searching" class="searching"><span class="material-symbols-outlined">search</span></button>
+        <div id="cube-search" class="cube-search">
+            <input type="text" placeholder="Search">
+        </div>
+    </div>
+
+    <header class="img-head">
+        <h1 class="hero-title">SolarShine Dynamics Story</h1>
+        <h2 class="hero-subtitle">Founded in 2005</h2>
+    </header>
+
+   <div class="cube">
+    <h1>Who We Are</h1>
+    <br>
+    <p>We are a company based in Costa Mesa and are committed at replacing customers' infrastructure and 
+    satisfying their needs to establish home solutions for the future. We plan, design, and implement different types of solar stations to provide 
+    a temporary source of power to new homes that have been built in the area, specifically
+    in the Los Angeles metropolitican area. Our consultants are planning to release a simplified way to 
+    execute these types of operations in a simpler way by putting the customer first and 
+    not leaving them behind with confusion.</p>
+    <br>
+
+    <p>For the past 2 decades, our team of experts is committed to deliver quality generator technology along 
+    with outstanding customer service. We will work closely with each customer to design any solutions they might have or need. 
+    We will offer immediate advice and guidance for every action or task we plan to execute. 
+    </p>
+    <br>
+
+    <p>Whether you are looking to add power to your new home or help the environment around you, SolarShine Dynamics
+    will provide power in a simple and affordable manner. Join us to improve the planet and help potential homeowners.
+    </p>
+    <br>
+
+    <p>At SolarShine Dynamics, we are interested in constructing new homes and providing them with temporary electricity. As a
+    leading provider of mobile generators, we specialize in installing and regulating generators for potential residential and 
+    commercial customers. Our main mission is to help customers achieve energy independence, while maintaining costs low
+    and minimize environmental consequences.
+    </p>
+    <br> 
+
+    <p>Let's work together to create a brighter tomorrow.</p>
+    </div>
+
+    <div class="value-cube">
+        <h1>Our Values</h1>
+            <br>
+            <h2>Safety</h2>
+            <br>
+            <p>We believe safety is the number one priority for both our developers and customers.
+            Our developers will always follow the code of conduct and following OSHA guidelines to reduce risk 
+            during installation, maintenance, and operations. We will ensure that every project we partake will be 
+            done with the highest safety standards for customers and their communities. Our customers can provide us 
+            safety concerns they have and will immediately resolve any issues. We will invest in safety training for 
+            our team members and use quality equipment to ensure safe places.
+            </p>
+            <br>
+
+            <h2>Quality</h2> 
+            <br>
+            <p>Our solar stations are always state of the art and we construct stations that we believe will deliver 
+            good results for the next decade. Our products come from the most reliable suppliers and are designed to provide 
+            maximum efficiency and durability. We will continue to monitor and upgrade our products to guarantee that every 
+            home generator is installed with precision for a long-term reliability. By following standards of quality, we make 
+            sure that our customers receive good value amd long-lasting energy savings.
+            </p>
+            <br>
+
+            <h2>Confidentiality</h2>
+            <br>
+            <p>As a generator company, we respect the privacy of our customers and partners. We handle 
+            sensitive and personal information with care, guaranteeing that all project plans and customer data is kept confidential.
+            Our company also implements data protection policies and follow privacy regulations to establish trusting customer and company
+            relationships. Our goal is to ensure that all data and information is secured, supporting customer and company integrity.
+            </p>
+            <br>
+
+            <h2>Sustainability</h2>
+            <br>
+            <p>We at SolarShine Dynamics believe that the planet earth needs to have sustainable practices to protect
+            our planet. This includes from assembling materials to producing the solar stations. This will provide good benefits and make us 
+            a standing competitor in the solar sector. Our commitment to sustainabilty goes beyond offering home generators, as we focus 
+            on our operations. We minimize carbon footprints and try to use eco-friendly materials. By investing in sustainabilty, 
+            we are creating long-term value and positive impact for both our customers and the planet.
+            </p>
+            <br>
+
+            <h2>Collaboration</h2>
+            <br>
+            <p>Collaboration is the main mission of our company. We work closely with customers, communities, and 
+            organizations to deliver solar solutions to meet needs and goals. We use open communication and respect to create solutions 
+            to maximize efficiency and effectiveness. We also embrace teamwork and share a vision among employees to prioritize innovation 
+            and problem solving while completing projects. This will help us to transition to renewable energy to new homes.
+            </p>
+            <br>
+    </div>
+
+    <div class="cube">Our main headquarters are located in Costa Mesa. However, we plan to expand nationwide in the coming time, so that we can 
+    be a trusting brand and be recognized throughout the country and world.
+    </div>
+
+    <div class="cube">"SolarShine Dynamics did a really good job at providing temporary power to my new home when I first bought it.
+    Now, I plan to look after them every time I consider getting a new home that is close to me." - Timothy</div>
+
+    <div class="cube">"I will consider [SolarShine Dynamics] because their service is top notch and good in quality. I like how they perform their service
+    while I was witnessing." - Steve</div>
+
+    <div class="cube">"They are the best at installing and configuring the best solar panels on the planet. Definitely recommending them over
+    SolarWinds!" - John</div>
+
+    <br>
+    <br>
+
+    <footer class="footer">
+        <p>&copy; SolarShine Dynamics, 2024. Copyright.</p>
+    </footer>
+
+    <script>
+        const boxes = document.querySelectorAll('.cube');
+
+        const fadeInBoxes = () => {
+        const tallWindow = window.innerHeight;
+
+        boxes.forEach(cube => {
+        const topCube = cube.getBoundingClientRect().top;
+
+        if (topCube < tallWindow) {
+            cube.style.opacity = 1; 
+            cube.style.transform = 'translateY(0)'; 
+        }
+        });
+        };
+
+        window.addEventListener('scroll', fadeInBoxes);
+        window.addEventListener('load', fadeInBoxes);
+
+        document.getElementById('searching').addEventListener('click', function() {
+        var iconSearch = document.getElementById('cube-search');
+        if (iconSearch.style.display === "block") {
+            iconSearch.style.display = "none";
+        } else {
+            iconSearch.style.display = "block";
+            iconSearch.querySelector('input').focus();
+        }
+        });
+    </script>
+
+</body>
+</html>
