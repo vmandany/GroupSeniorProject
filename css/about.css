@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial;
+    line-height: 1.6;
+    margin: 0;
+    height: 200vh;
+    background: linear-gradient(rgb(220, 223, 226), rgb(82, 151, 215)), url(solarpan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:rgb(82, 151, 215);
+    padding: 1px 380px;
+}
+
+.left-nav, .right-nav {
+  display: flex;
+}
+
+.left-nav a, .right-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo img {
+  max-width: 40px; 
+}
+
+.left-nav, .right-nav {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db; 
+    position: relative;
+    padding: 5px 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #1a01f8;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    color: #fff; 
+    background-color: #1a01f8; 
+}
+
+.cube {
+    background-color: white;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(128, 128, 128);
+    padding: 30px 90px 30px 90px;
+    text-align:justify;
+    opacity: 0.3; 
+    transform: translateY(20px); 
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.value-cube {
+    background-color: white;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(128, 128, 128);
+    padding: 50px 80px 50px 80px;
+    text-align: justify;
+    opacity: 0.9; 
+    transform: translateY(20px); 
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+h1 {
+    text-align: center;
+    color:#5297d7;
+}
+
+h2 {
+    text-align: center;
+    color: #3498db;
+}
+
+.search-box {
+    position: absolute;
+    top: 16px; 
+    right: 360px; 
+}
+
+.searching {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cube-search {
+    display: none;
+    position: absolute;
+    top: 4px;
+    left: 35px;
+    padding: 5px;
+    margin-top: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(82, 151, 215, 0.7);
+    background-color: white;
+    transition: all 0.3s ease-out;
+}
+
+.cube-search input {
+    padding: 2px;
+    width: 180px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.write {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 2em;
+    z-index: 1;
+}
+
+.img-head {
+    background-image: url("sleek-durable-desktop.avif");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: rgb(82, 151, 215);
+}
